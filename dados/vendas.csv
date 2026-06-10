@@ -1,0 +1,6 @@
+data,produto,cliente,cidade,quantidade,valor_unitario
+2026-06-01,Notebook,Empresa A,São Paulo,2,3500
+2026-06-01,Mouse,Empresa B,Rio de Janeiro,10,80
+2026-06-02,Monitor,Empresa C,Belo Horizonte,3,1200
+2026-06-02,Teclado,Empresa D,Curitiba,5,150
+2026-06-03,Notebook,Empresa E,São Paulo,1,3500
