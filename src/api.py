@@ -87,3 +87,18 @@ def dashboard():
         "faturamento_total": float(df["faturamento_total"][0]),
         "total_vendas": int(df["total_vendas"][0])
     }
+
+
+@app.get("/logs")
+def logs():
+
+    conexao = sqlite3.connect("empresa.db")
+
+    df = pd.read_sql_query(
+        "SELECT * FROM logs ORDER BY id DESC",
+        conexao
+    )
+
+    conexao.close()
+
+    return df.to_dict(orient="records")
