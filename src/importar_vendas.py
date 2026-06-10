@@ -1,5 +1,3 @@
-# src/importar_vendas.py
-
 import sqlite3
 import pandas as pd
 
@@ -10,7 +8,7 @@ df = pd.read_csv("dados/vendas.csv")
 df.to_sql(
     "vendas",
     conexao,
-    if_exists="append",
+    if_exists="replace",
     index=False
 )
 

@@ -1,5 +1,12 @@
-from importar_vendas import *
-from indicadores import *
-from relatorio import *
+print("=== INICIANDO PROCESSO ===")
 
-print("Processo finalizado com sucesso!")
+from importar_vendas import *
+print("Importação concluída!")
+
+from indicadores import *
+print("Indicadores gerados!")
+
+from relatorio import *
+print("Relatório gerado!")
+
+print("=== PROCESSO FINALIZADO COM SUCESSO ===")
