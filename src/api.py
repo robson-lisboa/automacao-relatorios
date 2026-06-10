@@ -97,7 +97,7 @@ def dashboard():
         "faturamento_total": float(resumo["faturamento_total"][0]),
         "total_vendas": int(resumo["total_vendas"][0]),
         "produto_campeao": produto["produto"][0] if not produto.empty else None,
-        "cidade_campea": city := (cidade["cidade"][0] if not cidade.empty else None)
+        "cidade_campea": cidade["cidade"][0] if not cidade.empty else None
     }
 
 # =========================
